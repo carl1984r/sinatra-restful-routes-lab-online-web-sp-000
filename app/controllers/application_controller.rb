@@ -55,4 +55,10 @@ class ApplicationController < Sinatra::Base
 
   end
 
+  delete '/articles/:id' do
+
+    Recipe.delete(params[:id])
+
+  end
+
 end
