@@ -1,0 +1,18 @@
+
+<p> <%= @recipe_object.name %> </p>
+<p> <%= @recipe_object.ingredients %> </p>
+<p> <%= @recipe_object.cook_time %> </p>
+
+<form action="/articles/<%= @article_object.id%>" method="post">
+
+   <input id="hidden" type="hidden" name="_method" value="PATCH">
+
+   <label for="article[:title]">Article Title</label>
+   <input type="text" id="title" name="article[title]">
+
+   <label for="article[:content]">Article Content</label>
+   <input type="text" id="content" name="article[content]">
+
+   <input type="submit" id="submit">
+
+</form>
